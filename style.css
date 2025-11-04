@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/* Cores do Design Original */
+:root {
+  --color-primary: #68A86E;
+  --color-secondary: #7CB342;
+  --color-text-dark: #333333;
+  --color-text-light: #ffffff;
+  --color-background-light: #E1EAD8;
+}
+
+/* Base e Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--color-text-dark);
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto; /* Centraliza o container */
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* ----------------------------------
+   HERO / HEADER
+---------------------------------- */
+.header-hero {
+  /* Background da imagem da floresta */
+  background: url("./assets/Banner.png") no-repeat center center;
+  /* Adiciona padding para definir a altura visualmente */
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* Overlay escuro simulado */
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply; /* Multiplica a cor de fundo com a imagem */
+  color: var(--color-text-light);
+  text-align: center; /* Centraliza o logo e o bloco .centralizador */
+}
+
+.header-hero__logo-bar {
+  text-align: left; /* Traz o logo de volta para a esquerda */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* Ajusta margin para posicionar no topo se necessário */
+  margin-top: -150px;
+}
+
+.logo {
+  display: inline-block;
+  color: var(--color-text-light);
+}
+
+/* Centraliza o bloco principal (h1, p, button) */
+.centralizador {
+  text-align: center;
+}
+
+.box-header {
+  display: inline-block; /* Permite centralizar com text-align: center no pai */
+  max-width: 800px;
+  padding: 0 20px;
+  text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+.box-header h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.box-header p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Botão principal */
+.button {
+  display: inline-block;
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 15px 30px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ----------------------------------
+   AÇÕES (LAYOUT INLINE-BLOCK)
+---------------------------------- */
+.actions {
+  padding-top: 40px;
+}
+
+.actions__list {
+  text-align: center; /* Centraliza os blocos inline */
+  /* Remove o espaço branco entre inline-blocks */
+  font-size: 0;
+}
+
+.card {
+  /* O truque para o layout de 4 colunas */
+  display: inline-block;
+  width: 24%; /* 4 cards, sobrando 4% para as margens */
+  text-align: left;
+  vertical-align: top; /* Garante que todos alinhem no topo */
+  font-size: 16px; /* Volta o tamanho da fonte */
+  background: #ffffff;
+  margin: 0.5%; /* Margem de 0.5% em todos os lados (total 1%) */
+  padding: 15px;
+  border: 1px solid #eee;
+}
+
+.card__image {
+  max-width: 100%;
+  height: 150px;
+  margin-bottom: 10px;
+  /* Em CSS Básico, não podemos usar object-fit */
+}
+
+.card h3 {
+  font-size: 1.2em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.button--small {
+  padding: 8px 15px;
+  font-size: 0.9em;
+}
+
+/* ----------------------------------
+   FORMULÁRIO
+---------------------------------- */
+.form-section {
+  background: var(--color-background-light);
+  text-align: center;
+}
+
+.form-section__title {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.form-section__subtitle {
+  margin-bottom: 30px;
+  display: block;
+}
+
+.form {
+  display: inline-block; /* Centraliza o bloco do formulário */
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+}
+
+.form__input,
+.form__select {
+  display: block; /* Cada campo ocupa uma linha inteira */
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.form button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  background: var(--color-primary);
+}
+
+/* ----------------------------------
+   FOOTER
+---------------------------------- */
+.footer {
+  background: var(--color-secondary);
+  color: var(--color-text-light);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

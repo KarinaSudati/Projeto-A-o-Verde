@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde Ação - CSS Básico</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    
+    <header class="header-hero">
+        <div class="container header-hero__logo-bar">
+        </div>
+        
+        <div class="centralizador">
+            <div class="header-hero__content box-header">
+                <h1>Verde Ação</h1>
+                <p>Ser voluntário na Verde Ação é plantar esperança e colher transformação. Juntos, cuidamos do planeta e inspiramos mudanças reais!</p>
+                <a href="#cadastro" class="button">Quero ser voluntário</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="acoes" class="actions section">
+            <div class="container actions__wrapper">
+                
+                <div class="actions__list">
+                    <div class="card">
+                        <img src="./assets/Girassol.png" alt="Plantação de Girassol" class="card__image">
+                        <h3 class="card__title">Plantio de mudas</h3>
+                        <p class="card__description">Cada muda plantada ajuda a reciclar o carbono da atmosfera.</p>
+                        <a href="#" class="button button--small">Ver mais</a>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./assets/Educação.png" alt="Educação Ambiental" class="card__image">
+                        <h3 class="card__title">Educação Ambiental</h3>
+                        <p class="card__description">Promove educação e a redes de proteção da vida.</p>
+                        <a href="#" class="button button--small">Ver mais</a>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./assets/Cuidados.png" alt="Cuidados" class="card__image">
+                        <h3 class="card__title">Cuidados</h3>
+                        <p class="card__description">Ajude a cuidar áreas que precisam de manutenção.</p>
+                        <a href="#" class="button button--small">Ver mais</a>
+                    </div>
+                    
+                    <div class="card">
+                        <img src="./assets/florestas 1.png" alt="Mapeamento" class="card__image">
+                        <h3 class="card__title">Mapeamento</h3>
+                        <p class="card__description">Subdividir áreas que precisam de manutenção.</p>
+                        <a href="#" class="button button--small">Ver mais</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="cadastro" class="form-section section">
+            <div class="container form-section__content">
+                <h2 class="form-section__title">Cadastre-se como voluntário</h2>
+                <p class="form-section__subtitle">Faça parte de ações que transformam o mundo. Com pequenas atitudes, você pode gerar grandes impactos na natureza e na sociedade.</p>
+                
+                <div class="centralizador">
+                    <form class="form">
+                        <input type="text" placeholder="Nome" class="form__input" required>
+                        <input type="email" placeholder="Email" class="form__input" required>
+                        <input type="text" placeholder="Cidade" class="form__input" required>
+                        
+                        <select class="form__input form__select" required>
+                            <option value="" disabled selected>Selecione atividade</option>
+                            <option value="plantio">Plantio de mudas</option>
+                            <option value="educacao">Educação Ambiental</option>
+                            <option value="cuidados">Cuidados</option>
+                            <option value="mapeamento">Mapeamento</option>  
+                            </select>
+                        
+                        <button type="submit" class="button">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__text">© todos os direitos reservados</p>
+        </div>
+    </footer>
+</body>
+</html>
