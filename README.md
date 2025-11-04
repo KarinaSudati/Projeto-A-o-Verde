@@ -1,5 +1,6 @@
 # 🌳 [Desafio Básico] Verde Ação - Layout Fundamental 📐
 
+
 <h2 align="center">Plataforma de Voluntariado Ambiental (Construído sem Flexbox ou Grid)</h2>
 
 ---
@@ -16,7 +17,7 @@
 
 ---
 
-## 📝 Sobre Este Projeto e o Desafio
+## 📝 Sobre Este Projeto e o Desafio: Aprendizado Desenvolvido no Curso de FullStack na Escola de Tecnologia Vai Na Web!
 
 Este projeto é uma **Landing Page** desenvolvida como um exercício prático e um **desafio de consolidação de conceitos básicos de CSS**. O objetivo foi replicar um design fielmente (Figma) utilizando um conjunto **limitado** de propriedades CSS fundamentais.
 
